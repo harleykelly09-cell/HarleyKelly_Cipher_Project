@@ -1,0 +1,78 @@
+Change log:
+0.1.0 (31-03-2026):
+
+I have added a simple file handling system and the main function.
+The main function could open text files and read them, or open text files and write to them.
+At this stage the program was purely procedural and had no encryption functionality.
+
+The file handler class was introduced shortly after this initial version.
+The file handler class contains two functions:
+
+Read, which opens a file based on the file path on the computer and reads its contents.
+Write, which opens a file and writes data to it.
+
+This change marked the first step toward structuring the program using classes instead of only functions.
+
+0.1.1 (04-04-2026):
+
+Added substitution cipher functionality.
+This introduced the first encryption method in the program.
+
+The substitution cipher works by rearranging the alphabet based on a key provided by the user.
+Each letter in the plaintext is replaced with a corresponding letter in a shifted or reordered alphabet.
+
+At this stage, the cipher was still separate from the file handling system and was tested independently before integration.
+
+0.1.2 (10-04-2026):
+
+Integrated the substitution cipher into the file handling system.
+The program could now read a text file, encrypt its contents using the substitution cipher, and write the result to a new file.
+
+This was the first version where file handling and encryption worked together as a single system.
+
+0.1.3 (18-04-2026):
+
+Added Polybius cipher using a 5x5 grid system.
+This introduced a second encryption method alongside the substitution cipher.
+
+The Polybius cipher converts letters into coordinate pairs based on their position in a 5x5 grid.
+The letter J is merged with I to fit the grid structure.
+
+At this stage, the program supported multiple encryption methods but they were still separate and not combined.
+
+1.0.0 (22-04-2026):
+
+Introduced the Cipher Engine system.
+This allowed multiple cipher methods to be executed in a defined order.
+
+The system now supported:
+
+Substitution cipher
+Polybius cipher
+Sequential execution of both (Substitution → Polybius)
+
+This marked the first version of a structured encryption pipeline.
+
+1.1.0 (25-04-2026):
+
+Added Tkinter graphical user interface.
+The program could now be used through a visual interface instead of only the command line.
+
+The UI included:
+
+File selection system
+Codeword input field
+Encode and Decode buttons
+Output display box
+
+This improved usability significantly and made the program more interactive.
+
+1.1.0 (27-04-2026):
+
+Refined the cipher system and fixed compatibility issues between Substitution and Polybius ciphers.
+
+The Polybius cipher was reverted to a 5x5 grid system to ensure compatibility with the substitution cipher.
+This removed issues caused by expanded character sets and ensured consistent encoding and decoding.
+
+The system now works as a stable chained encryption model:
+Substitution → Polybius → Reverse decoding process.
