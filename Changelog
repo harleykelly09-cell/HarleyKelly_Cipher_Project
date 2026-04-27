@@ -67,6 +67,12 @@ Output display box
 
 This improved usability significantly and made the program more interactive.
 
+Attempted 6×6 Polybius Expansion:
+
+A 6×6 version of the Polybius cipher was also tested to expand the character set to include numbers as well as letters. However, this caused compatibility issues with the substitution cipher, which only supports A–Z. The mismatch led to inconsistent encoding and decoding in the chained system.
+
+As a result, the 6×6 version was removed and the system was reverted back to the standard 5×5 Polybius cipher (with J merged into I) to restore full compatibility and reversibility.
+
 1.1.0 (27-04-2026):
 
 Refined the cipher system and fixed compatibility issues between Substitution and Polybius ciphers.
