@@ -82,3 +82,13 @@ This removed issues caused by expanded character sets and ensured consistent enc
 
 The system now works as a stable chained encryption model:
 Substitution → Polybius → Reverse decoding process.
+
+1.1.0 (27-04-2026):
+
+Added a system to record performance and provide numerical evidence such as:
+o Original message length (characters)
+o Coded file size vs original file size (overhead)
+o Decode success/failure indicator (and any additional metric you propose)
+o A minimum recommended metric is File Expansion Ratio (FER):
+FER (%) = (Coded file size / Original file size) × 100
+
